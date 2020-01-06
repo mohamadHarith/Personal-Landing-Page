@@ -1,0 +1,139 @@
+
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	
+}
+
+a{
+	color: #343a40;
+}
+
+h1{
+	padding: 0;
+	margin: 0;
+}
+
+.container{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-color: #343a40;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  }
+
+.canvas{
+	position: fixed;
+	right: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background-color: #343a40;
+  }
+
+.container-portfolio{	
+	position: absolute;
+	margin: auto;
+	width: 400px;
+	height: 490px;
+}
+
+.portfolioCard{
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	border: 2px solid #343a40;
+	overflow: hidden;
+}
+
+.avatar-container{
+	padding-top: 20px;
+	width: 100%;
+	height: 35%;	
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.avatar{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 140px;
+	height: 140px;
+	border-radius: 70px;
+	overflow: hidden;
+}
+
+.avatar img{
+	width: 160px;
+	height: 160px;
+}
+
+.information{
+	width: 100%;
+	height: 40%;
+	text-align: center;
+	overflow: hidden;
+}
+
+.information h1{
+	font-family: 'Josefin Sans', sans-serif;
+	color: #343a40;
+	padding: 5%;
+	font-size: 35px;
+
+}
+
+.information p{
+	color: #343a40;
+	font-size: 16px;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+
+}
+
+.information i{
+	margin-right: 2%;
+}
+
+.social-media{
+	/*background-color: blue;*/
+	width: 100%;
+	height: 25%;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	overflow: hidden;
+	 
+}
+
+.social-media span{
+	padding: 5%;
+	color: #343a40;
+	font-size: 35px;
+	cursor: pointer;
+	
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .container-portfolio, .portfolioCard, .avatar, .infomation {
+    width: 100%;
+    border: 0px;
+  }
+  /* .portfolioCard{
+  	background-color: rgba(255, 255, 255, 0.5);
+  } */
+}
